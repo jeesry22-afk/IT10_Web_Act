@@ -1,0 +1,76 @@
+*{
+    color: #131212;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+h1, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 75px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #eef4fa;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.bio,
+.hobbies li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 12px 4px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-facebook {
+    background-color: #2359a8;
+}
+
+.btn-facebook:hover {
+    background-color: #183e78;
+}
+
+.btn-instagram {
+    background-color: #a82b61;
+}
+
+.btn-instagram:hover {
+    background-color: #7e2049;
+}
+
+.btn-tiktok {
+    background-color: #161616;
+}
+
+.btn-tiktok:hover {
+    background-color: #303030;
+    color: #69e5df;
+}
+
+.btn:focus-visible {
+    outline: 3px solid #131212;
+    outline-offset: 3px;
+}
+
