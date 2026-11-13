@@ -8,7 +8,7 @@ body {
     display: grid;
     align-items: start;
     justify-items: center;
-    padding: 24px 16px;
+    padding: 24px clamp(24px, 6vw, 80px);
     background-color: #ffffff;
     color: #25382e;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +20,7 @@ body {
 }
 
 .profile-header {
-    padding: clamp(24px, 5vw, 40px) 20px;
+    padding: 16px 16px 8px;
     border: 1px solid #b77958;
     border-bottom: none;
     border-radius: 20px 20px 0 0;
@@ -33,10 +33,14 @@ body {
     width: min(100%, 240px);
     height: auto;
     aspect-ratio: 1;
-    margin: 24px auto 0;
+    margin: 12px auto 0;
     border: 3px solid #fff0e5;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.profile-details {
+    margin-top: 12px;
 }
 
 h1 {
@@ -48,16 +52,15 @@ h1 {
 
 .profile-bio {
     background-color: #ffe5d4;
-    min-height: 320px;
     margin-top: 0;
-    padding: clamp(24px, 5vw, 40px);
+    padding: 8px clamp(32px, 8vw, 64px) 24px;
     border: 1px solid #b77958;
     border-top: none;
     border-radius: 0 0 20px 20px;
 }
 
 h2 {
-    margin: 0 0 20px;
+    margin: 0 0 12px;
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
@@ -71,11 +74,15 @@ p {
 
 .bio-content {
     text-align: center;
-    padding: clamp(16px, 3vw, 24px);
+    padding: 20px clamp(24px, 5vw, 48px);
     border: 1px solid #b77958;
     border-radius: 8px;
 }
 
+.bio-content p {
+    line-height: 1.6;
+}
+
 .profile-bio p + p {
-    margin-top: 20px;
+    margin-top: 12px;
 }
