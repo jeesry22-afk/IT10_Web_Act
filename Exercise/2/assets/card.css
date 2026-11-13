@@ -6,9 +6,10 @@ body {
     margin: 0;
     min-height: 100vh;
     display: grid;
-    place-items: center;
+    align-items: start;
+    justify-items: center;
     padding: 24px 16px;
-    background-color: #f2f0eb;
+    background-color: #ffdab9;
     color: #25382e;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,19 +21,21 @@ body {
 
 .profile-header {
     padding: clamp(24px, 5vw, 40px) 20px;
-    border: 1px solid #b8c9bc;
-    border-radius: 10px;
-    background-color: #e8efe7;
+    border: 1px solid #b77958;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    background-color: #ffe5d4;
     text-align: center;
 }
 
 .profile-photo {
     display: block;
-    width: clamp(140px, 24vw, 180px);
-    height: clamp(140px, 24vw, 180px);
-    margin: 0 auto 20px;
-    border: 3px solid #fffdf8;
-    border-radius: 50%;
+    width: min(100%, 240px);
+    height: auto;
+    aspect-ratio: 1;
+    margin: 24px auto 0;
+    border: 3px solid #fff0e5;
+    border-radius: 16px;
     object-fit: cover;
 }
 
@@ -44,12 +47,13 @@ h1 {
 }
 
 .profile-bio {
-    background-color: #fffdf8;
+    background-color: #ffe5d4;
     min-height: 320px;
-    margin-top: 24px;
+    margin-top: 0;
     padding: clamp(24px, 5vw, 40px);
-    border: 1px solid #b8c9bc;
-    border-radius: 16px;
+    border: 1px solid #b77958;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
 }
 
 h2 {
@@ -63,4 +67,15 @@ p {
     margin: 0;
     font-size: 1.125rem;
     line-height: 1.8;
+}
+
+.bio-content {
+    text-align: center;
+    padding: clamp(16px, 3vw, 24px);
+    border: 1px solid #b77958;
+    border-radius: 8px;
+}
+
+.profile-bio p + p {
+    margin-top: 20px;
 }
