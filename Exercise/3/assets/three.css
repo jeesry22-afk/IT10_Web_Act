@@ -1,0 +1,33 @@
+body {
+    background-color: #f2f5fd;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: #e3eaff;
+}
+
+.menu-label,
+.menu-rating-value {
+    color: #886200;
+}
+
+.menu-rating {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.hide-item {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.add-to-cart {
+    min-height: 44px;
+}

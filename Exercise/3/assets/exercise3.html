@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 | Food Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="three.css">
+</head>
+<body>
+    <main class="container py-5">
+        <h1 class="visually-hidden">Food Menu</h1>
+
+        <div class="row g-3">
+            <div class="col-lg-4 col-sm-12" id="siopao">
+                <article class="card border-primary h-100" aria-labelledby="siopao-title">
+                    <div class="card-header bg-primary text-white d-flex align-items-center justify-content-between">
+                        <span class="fs-4">Item 1</span>
+                        <button type="button" class="btn btn-danger rounded-circle hide-item opacity-100" aria-label="Hide Siopao" disabled>&times;</button>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid menu-item rounded" src="Siopao.jpg" alt="White cat looking up at the camera">
+                        <div class="d-flex justify-content-between align-items-baseline gap-2 mt-2 mb-3">
+                            <h2 class="h4 mb-0" id="siopao-title">Siopao</h2>
+                            <span class="menu-rating"><span class="menu-rating-value">5</span> / 5</span>
+                        </div>
+                        <h3 class="h6 menu-label">Description</h3>
+                        <p>A soft, fluffy steamed bun with a sweet and savory cat filling.</p>
+                        <h3 class="h6 menu-label">Ingredients</h3>
+                        <ul>
+                            <li>Steamed bun dough</li>
+                            <li>Cat meat</li>
+                            <li>Soy sauce</li>
+                            <li>Brown sugar</li>
+                            <li>Garlic</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary mt-auto add-to-cart opacity-100" disabled>Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-12" id="sioman">
+                <article class="card border-primary h-100" aria-labelledby="sioman-title">
+                    <div class="card-header bg-primary text-white d-flex align-items-center justify-content-between">
+                        <span class="fs-4">Item 2</span>
+                        <button type="button" class="btn btn-danger rounded-circle hide-item opacity-100" aria-label="Hide Sioman" disabled>&times;</button>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid menu-item rounded" src="Sioman.gif" alt="Close-up of a white cat with green eyes">
+                        <div class="d-flex justify-content-between align-items-baseline gap-2 mt-2 mb-3">
+                            <h2 class="h4 mb-0" id="sioman-title">Sioman</h2>
+                            <span class="menu-rating"><span class="menu-rating-value">5</span> / 5</span>
+                        </div>
+                        <h3 class="h6 menu-label">Description</h3>
+                        <p>A steamed bun filled with juicy cat and mushrooms seasoned with garlic and soy sauce.</p>
+                        <h3 class="h6 menu-label">Ingredients</h3>
+                        <ul>
+                            <li>Steamed bun dough</li>
+                            <li>Cat</li>
+                            <li>Mushrooms</li>
+                            <li>Soy sauce</li>
+                            <li>Garlic</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary mt-auto add-to-cart opacity-100" disabled>Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-12" id="siomai">
+                <article class="card border-primary h-100" aria-labelledby="siomai-title">
+                    <div class="card-header bg-primary text-white d-flex align-items-center justify-content-between">
+                        <span class="fs-4">Item 3</span>
+                        <button type="button" class="btn btn-danger rounded-circle hide-item opacity-100" aria-label="Hide Siomai" disabled>&times;</button>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <img class="img-fluid menu-item rounded" src="Siomai.gif" alt="Wide-eyed white cat in front of pink curtains">
+                        <div class="d-flex justify-content-between align-items-baseline gap-2 mt-2 mb-3">
+                            <h2 class="h4 mb-0" id="siomai-title">Siomai</h2>
+                            <span class="menu-rating"><span class="menu-rating-value">5</span> / 5</span>
+                        </div>
+                        <h3 class="h6 menu-label">Description</h3>
+                        <p>Bite-sized steamed dumplings filled with ground cat, carrots, and green onions.</p>
+                        <h3 class="h6 menu-label">Ingredients</h3>
+                        <ul>
+                            <li>Wonton wrappers</li>
+                            <li>Ground cat</li>
+                            <li>Carrots</li>
+                            <li>Green onions</li>
+                            <li>Sesame oil</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary mt-auto add-to-cart opacity-100" disabled>Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
