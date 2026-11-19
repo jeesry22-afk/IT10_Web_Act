@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 | Student Registration Form</title>
+    <link rel="stylesheet" href="four.css">
+</head>
+<body>
+    <main>
+        <h1>Student Registration Form</h1>
+        <form method="get">
+            <label for="student-name">Full name (required)</label>
+            <input type="text" id="student-name" autocomplete="name" required>
+
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" autocomplete="email" required>
+
+            <label for="course">Course (required)</label>
+            <select id="course" required>
+                <option value="" selected disabled hidden>Choose a course</option>
+                <option>Web Development</option>
+                <option>Graphic Design</option>
+                <option>Robotics</option>
+            </select>
+
+            <label for="reason">Why do you want to join the club? (optional)</label>
+            <textarea id="reason" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
